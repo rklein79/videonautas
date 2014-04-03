@@ -23,7 +23,7 @@
                 </div>
                 <div id="search">
                         <input type="text" id="search-field">
-                        <span id="search-button"></span>
+                        <span id="search-button" onclick="" onkeydown=""><img src="images/lupa.png" width="29"/></span>
                 </div>
                 <div id="bottom-menu">
                     <ul>
