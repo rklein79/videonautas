@@ -66,17 +66,17 @@ var boxtam = 240
 var finalpos = -(boxtam * 7);
 
 function walkon(){
-    if(atualpos == finalpos)
-        atualpos = inipos;
-    else
-        atualpos -= boxtam;
-    $('#vg-content').animate({left:atualpos+'px'});
-}
-function walkback(){
     if(atualpos == inipos)
         atualpos = finalpos;
     else
         atualpos += boxtam;
+    $('#vg-content').animate({left:atualpos+'px'});
+}
+function walkback(){
+    if(atualpos == finalpos)
+        atualpos = inipos;
+    else
+        atualpos -= boxtam;
     $('#vg-content').animate({left:atualpos+'px'});
 }
 

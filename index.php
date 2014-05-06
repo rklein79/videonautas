@@ -1,7 +1,9 @@
 <!DOCTYPE HTML>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">	<link rel="stylesheet" href="css/style.css" type="text/css">
+    <meta name="robots" content="noindex">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 	<title>VN Esqueleto</title>
@@ -122,7 +124,7 @@
                         <div id="videogallery" onmouseover="prepbt();" onmouseout="getNbt();">
                             <div id="leftarrow-block" ><div id="leftarrow" onclick="walkon();"><img src="images/left-galery-arrow.png"/></div></div>
                             <div id="vg-content">
-                                <!--                            <span id="tvideom">   </span>  -->
+                            <span id="tvideom">   </span>
                             <span id="tvideo">
                                 <span id="thumb-vd">
                                     <img src="http://img.youtube.com/vi/c0bE5xHkklE/0.jpg" width="200">​
@@ -184,6 +186,155 @@
                             </div>
                             <div id="rightarrow-block"><div id="rightarrow" onclick="walkback();"><img src="images/right-galery-arrow.png"/></div></div>
                         </div>
+
+                    </div>
+                    <div id="result_content">
+                        <div id="busca_content">
+                            <span id="videonautas-result"></span>
+                            <div id="busca_result">
+                                <div id="prod_pesq-top"><span id="title-side">Produtos pesquisado</span></div>
+                                <div id="busca-content"></div>
+                            </div>
+                        </div>
+                        <div id="sidebar">
+                            <span id="banner"><img src="images/teste/Promo.png" /> </span>
+                            <sup id="publicidade">Publicidade </sup>
+                            <div id="top-side">
+                                <span id="title-side">Produtos Sugeridos</span>
+                            </div>
+                            <div id="produtos_sugeridos">
+                            <div id="produtos_cell">
+                                <span id="prod-box">
+                                    <div id="info-box">
+                                        <span id="img-box">
+                                            <img src=""/>
+                                        </span>
+                                        <span id="aboutprod">Forno Elétrico cookie-top chef 220v - Preto</span>
+                                        <span id="fabrprod">por: <b>ELECTROLUX</b></span>
+                                    </div>
+                                    <div id="preco-box">
+                                        <span id="prodaval">Avaliação (21)</span>
+                                        <div id="prodstars">
+                                            <span class="halfstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                        </div>
+                                        <span id="ofertas-bt">6 Ofertas</span>
+                                        <div id="produto-media-precos">
+                                            <div id="bloco-preco">
+                                                <span class="pre-preco">De:</span>
+                                                <span class="preco">R$ 2.189,00</span>
+                                            </div>
+                                            <div id="bloco-preco">
+                                                <span class="pre-preco">Até:</span>
+                                                <span class="preco">R$ 4.099,00</span>
+                                            </div>
+                                        </div>
+                                        <div id="saibamais_bt">Saiba Mais</div>
+                                    </div>
+                                </span>
+
+                                <span id="prod-box">
+                                    <div id="info-box">
+                                        <span id="img-box">
+                                            <img src=""/>
+                                        </span>
+                                        <span id="aboutprod">Forno Elétrico cookie-top chef 220v - Preto</span>
+                                        <span id="fabrprod">por: <b>ELECTROLUX</b></span>
+                                    </div>
+                                    <div id="preco-box">
+                                        <span id="prodaval">Avaliação (21)</span>
+                                        <div id="prodstars">
+                                            <span class="halfstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                        </div>
+                                        <span id="ofertas-bt">6 Ofertas</span>
+                                        <div id="produto-media-precos">
+                                            <div id="bloco-preco">
+                                                <span class="pre-preco">De:</span>
+                                                <span class="preco">R$ 2.189,00</span>
+                                            </div>
+                                            <div id="bloco-preco">
+                                                <span class="pre-preco">Até:</span>
+                                                <span class="preco">R$ 4.099,00</span>
+                                            </div>
+                                        </div>
+                                        <div id="saibamais_bt">Saiba Mais</div>
+                                    </div>
+                                </span>
+
+                                <span id="prod-box">
+                                    <div id="info-box">
+                                        <span id="img-box">
+                                            <img src=""/>
+                                        </span>
+                                        <span id="aboutprod">Forno Elétrico cookie-top chef 220v - Preto</span>
+                                        <span id="fabrprod">por: <b>ELECTROLUX</b></span>
+                                    </div>
+                                    <div id="preco-box">
+                                        <span id="prodaval">Avaliação (21)</span>
+                                        <div id="prodstars">
+                                            <span class="halfstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                        </div>
+                                        <span id="ofertas-bt">6 Ofertas</span>
+                                        <div id="produto-media-precos">
+                                            <div id="bloco-preco">
+                                                <span class="pre-preco">De:</span>
+                                                <span class="preco">R$ 2.189,00</span>
+                                            </div>
+                                            <div id="bloco-preco">
+                                                <span class="pre-preco">Até:</span>
+                                                <span class="preco">R$ 4.099,00</span>
+                                            </div>
+                                        </div>
+                                        <div id="saibamais_bt">Saiba Mais</div>
+                                    </div>
+                                </span>
+
+                                <span id="prod-box">
+                                    <div id="info-box">
+                                        <span id="img-box">
+                                            <img src=""/>
+                                        </span>
+                                        <span id="aboutprod">Forno Elétrico cookie-top chef 220v - Preto</span>
+                                        <span id="fabrprod">por: <b>ELECTROLUX</b></span>
+                                    </div>
+                                    <div id="preco-box">
+                                        <span id="prodaval">Avaliação (21)</span>
+                                        <div id="prodstars">
+                                            <span class="halfstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                            <span class="fullstar"></span>
+                                        </div>
+                                        <span id="ofertas-bt">6 Ofertas</span>
+                                        <div id="produto-media-precos">
+                                            <div id="bloco-preco">
+                                                <span class="pre-preco">De:</span>
+                                                <span class="preco">R$ 2.189,00</span>
+                                            </div>
+                                            <div id="bloco-preco">
+                                                <span class="pre-preco">Até:</span>
+                                                <span class="preco">R$ 4.099,00</span>
+                                            </div>
+                                        </div>
+                                        <div id="saibamais_bt">Saiba Mais</div>
+                                    </div>
+                                </span>
+
+                            </div>
+                            </div>
+                        </div><!-- end of sidebar -->
 
                     </div>
 
