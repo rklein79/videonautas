@@ -7,6 +7,24 @@
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
 	<title>VN Esqueleto</title>
+    <script type="text/javascript" src="js/fadeSlideShow.js"></script>
+    <script language="javascript">
+    $(document).ready(function(){
+        $('#slideshow').fadeSlideShow({
+            PlayPauseElement: false,
+            NextElement: false,
+            PrevElement: false,
+            autoplay: true,
+            speed: 'slow',
+            interval: 6000,
+            width: 830,
+            height: 460,
+            descreveal: "always",
+            extrabuttons: {pause: 6000, nextprevresume: true},
+            togglerid: "slideshowtoggler",
+        });
+    });
+    </script>
 </head>
 <body>
     <div id="wrap">
@@ -192,7 +210,7 @@
                         <div id="busca_content">
                             <span id="videonautas-result"></span>
                             <div id="busca_result">
-                                <div id="prod_pesq-top"><span id="title-side">Produtos pesquisado</span></div>
+                                <div id="prod_pesq-top"><span id="title-side">Produto pesquisado</span></div>
                                 <div id="busca-content"></div>
                             </div>
                         </div>
@@ -336,15 +354,125 @@
                             </div>
                         </div><!-- end of sidebar -->
 
+                        <div id="destaques-bloco">
+                            <div id="inscreva-se">
+                                <div id="logo-noticias"></div>
+                                <div id="inctop">
+                                    <img src="images/vn-noticias.png" width="221" />
+                                </div>
+                                <div id="formbox">
+                                    <span id="formdescription">Inscreva-se e receba, novidades e novas ofertas em videos.</span>
+                                    <input type="text" class="inputtext" placeholder="seu nome">
+                                    <input type="text" class="inputtext" placeholder="seu e-mail">
+                                    <span id="radiob">
+                                        <span id="checklabel">Gênero:</span>
+                                        <input type="radio" name="genero" id="genero" value="masculino"><span id="checklabel">Masculino</span>
+                                        <input type="radio" name="genero" id="genero" value="feminino"><span id="checklabel">Feminino</span>
+                                    </span>
+                                    <div id="btcell">
+                                        <span id="cadastrar-bt">Cadastrar</span>
+                                    </div>
+                                </div>
+                            </div><!-- end of inscreva-se -->
+                            <div id="destaques-banners">
+                                <div id="prod_pesq-top"><span id="title-side">Destaques</span></div>
+                                <ul id="slideshow">
+                                    <li><a href=""><img src="images/teste/ban1.png" border="0" alt="" /></a></li>
+                                    <li><a href=""><img src="images/teste/ban2.png" border="0" alt="" /></a></li>
+                                    <li><a href=""><img src="images/teste/ban1.png" border="0" alt="" /></a></li>
+                                    <li><a href=""><img src="images/teste/ban2.png" border="0" alt="" /></a></li>
+                                    <li><a href=""><img src="images/teste/ban1.png" border="0" alt="" /></a></li>
+                                </ul>
+
+                            </div>
+                        </div><!-- end of destaque-bloco -->
+                    </div><!-- end of result_content -->
+
+                    <div id="outros-canais">
+                        <div id="outros-banner">
+                            <span id="banner-outros"><img src="images/teste/Promo2.png" /> </span>
+                            <sup id="publicidade">Publicidade </sup>
+                        </div>
+                        <div id="canais">
+                            <div id="canal_table">
+
+                                <div id="canal_cell">
+                                    <div id="canal">
+                                        <div id="prod_pesq-top"><span id="title-side" class="purple_color">Plug-in Play</span></div>
+                                        <div id="canal_main">
+                                            <div id="img-video"></div>
+                                            <div id="logo-bt">
+                                                <img id="logo" src="images/logo-plug.png" width="71"/>
+                                                <span id="bt-canal" class="purple_color">Ver</span>
+                                            </div>
+                                        </div>
+                                        <div id="canal_description">
+                                            <div id="canal_title">Nova TV SONY BRAVIA 60” 4K - Veja como ela chega na sua casa - Lançamento Mundial</div>
+                                            <div id="canal_fabrprod">por: <b>Plug-in Play SONY</b></div>
+                                        </div>
+                                    </div><!-- end of canal -->
+
+                                    <div id="canal">
+                                        <div id="prod_pesq-top"><span id="title-side" class="blue_color">Especialistas</span></div>
+                                        <div id="canal_main">
+                                            <div id="img-video"></div>
+                                            <div id="logo-bt">
+                                                <img id="logo" src="images/logo-especialista.png" width="71"/>
+                                                <span id="bt-canal" class="blue_color">Ver</span>
+                                            </div>
+                                        </div>
+                                        <div id="canal_description">
+                                            <div id="canal_title">PROCEL Recomenda novo AR Condicionado Consul 9.000btus</div>
+                                            <div id="canal_fabrprod">por: <b>Especialistas Consul</b></div>
+                                        </div>
+                                    </div><!-- end of canal -->
+                                </div>
+
+                            </div><!-- end of canal_table -->
+
+
+                        </div><!-- end of canais -->
+
+                    </div><!-- end of outros-canais -->
+
+
+                </div><!-- end of contents -->
+
+            </div><!-- endo of main-content -->
+            <div id="footer">
+                <div id="content">
+                    <div id="main-footer">
+                        <div id="footer-links">
+                            <div class="footer-title">Video Nautas</div>
+                            <ul>
+                                <a href=""><li>Quem Somos</li></a>
+                                <a href=""><li>Porque fazer video-commerce?</li></a>
+                                <a href=""><li>Política de Privacidade</li></a>
+                                <a href=""><li>Termos de Uso</li></a>
+                                <a href=""><li>Trabalhe conosco</li></a>
+                                <a href=""><li>Fale Conosco</li></a>
+                                <a href=""><li>FAQ Video Nautas</li></a>
+                            </ul>
+                        </div>
+                        <div id="footer-rs">
+                            <div class="footer-title">Rede Social</div>
+                            <div id="rs"></div>
+                            <div id="rs-buttons">
+                                <a href="" title="Instagram" class="Instagramf"></a>
+                                <a href="" title="Facebook" class="Facebookf"></a>
+                                <a href="" title="Twitter" class="Twitterf"></a>
+                                <a href="" title="Youtube" class="Youtubef"></a>
+                            </div>
+                        </div>
+                        <div id="face-footer">
+                            <iframe src="//www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2Fvideonautasbr&amp;width=300&amp;height=250&amp;show_faces=true&amp;colorscheme=light&amp;stream=false&amp;border_color&amp;header=true" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:300px; height:250px;" allowTransparency="true"></iframe>
+                        </div>
                     </div>
-
-
-
                 </div>
 
-            </div>
+            </div><!-- end of footer -->
 
-    </div>
+    </div><!-- end of wrap -->
 
 </body>
 
