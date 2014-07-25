@@ -2,7 +2,7 @@
   //   extract($_GET);
      include('inc/header.php');
      $header = new header('<script type="text/javascript" src="js/result.js"></script>');
-     echo $header->build();
+     echo $header->build($_GET['sc']);
 ?>
 
 <div id="result_content">

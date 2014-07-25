@@ -70,7 +70,7 @@ class busca extends buscape_api{
         return $ofertas;
     }
 
-    function monta_dadosvideoproduto($dados){
+    function monta_dadosvideoproduto($dados,$id_vd){
 //		if(!is_array($dados)) return $this->buscape_falha.' <br/> <br/> Retorno: '.$dados;
 		if( $dados->details->code == 401 ) return $this->buscape_overload;
 
@@ -90,6 +90,10 @@ class busca extends buscape_api{
         $produto = str_replace("#priceMin#",$dados->product->priceMin,$produto);
         $produto = str_replace("#priceMax#",$dados->product->priceMax,$produto);
         $produto = str_replace("#link#",$dados->product->specification->links->link->attributes(),$produto);
+        $produto = str_replace("#id_vd#",$id_vd,$produto);
+
+
+
 
         return $produto;
     }

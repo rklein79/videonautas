@@ -7,5 +7,5 @@ require('xml/xmlclass.php');
 $xmlClass = new XMLClass();
 $param = array('keyword'=>$buscaval);
 $produto = $xmlClass->ReadXML($busca->findProductList($param));
-echo $busca->monta_dadosvideoproduto($produto);
+echo $busca->monta_dadosvideoproduto($produto,$id_vd);
 ?>
