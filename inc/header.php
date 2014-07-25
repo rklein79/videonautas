@@ -8,7 +8,7 @@
 
      }
 
-     public function build(){
+     public function build($sc =""){
         return
         '
         <!DOCTYPE HTML>
@@ -63,7 +63,7 @@
                                         <a href="/homo"><div id="logo"></div></a>
                                     </div>
                                     <div id="search">
-                                        <input type="text" id="search-field" placeholder="Buscar por marcas ou produto..." value="'.$_GET["sc"].'">
+                                        <input type="text" id="search-field" placeholder="Buscar por marcas ou produto..." value="'.$sc.'">
                                         <span id="search-button" onclick="gotoresult();" onkeydown=""><img src="images/lupa.png" width="29"/></span>
                                     </div>
                                 </div>
