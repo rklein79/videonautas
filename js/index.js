@@ -20,12 +20,6 @@ var lastHeight;
 
 function initForm(){
     lastHeight = $(document).height();
-<<<<<<< HEAD
-    setTimeout(heightChange, 500);
-}
-
-
-=======
 
     $(document).ready(function(){
         $('#slideshow').fadeSlideShow({
@@ -54,7 +48,6 @@ function initForm(){
 
 
 
->>>>>>> 5008a16763ab27f07b567f0da957f79bb7b6c331
 var sideop = 0;
 function sidebar(){
     if(sideop == 0){
@@ -94,11 +87,7 @@ function heightChange()
 var atualpos = 0;
 var inipos = 0;
 var boxtam = 240
-<<<<<<< HEAD
-var finalpos = -(boxtam * 7);
-=======
 var finalpos = -(boxtam * 4);
->>>>>>> 5008a16763ab27f07b567f0da957f79bb7b6c331
 
 function walkon(){
     if(atualpos == inipos)
@@ -124,8 +113,6 @@ function prepbt(){
 function getNbt(){
     $('#leftarrow').stop().animate({width:'10px'});
     $('#rightarrow').stop().animate({width:'10px'});
-<<<<<<< HEAD
-=======
 }
 
 
@@ -214,5 +201,4 @@ function gotoresult(){
         return false;
     }
     window.open("result.php?sc="+pesquisa,"_self");
->>>>>>> 5008a16763ab27f07b567f0da957f79bb7b6c331
 }

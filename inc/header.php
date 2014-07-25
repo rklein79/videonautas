@@ -14,13 +14,13 @@
         <!DOCTYPE HTML>
         <head>
             <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-            <meta name="robots" content="noindex">
+            <meta name="robots" content="noindex">			<link rel="icon" href="" type="image/x-icon" />			<link rel="shortcut icon" href="http://videonautas.com.br/homo/images/favicon.ico" type="image/x-icon" />			<title>Videonautas</title>
             <meta content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no" name="viewport">
             <link rel="stylesheet" href="css/style.css" type="text/css">
             <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
             <script src="js/jcarousel.js"></script>
             <script type="text/javascript" src="js/busca.js"></script>
-            <title>VN Esqueleto</title>
+
             <script type="text/javascript" src="js/fadeSlideShow.js"></script>'.$this->includes.'
         </head>
         <body>
@@ -60,10 +60,10 @@
                                 </div>
                                 <div id="content">
                                     <div id="main-header">
-                                        <a href="/"><div id="logo"></div></a>
+                                        <a href="/homo"><div id="logo"></div></a>
                                     </div>
                                     <div id="search">
-                                        <input type="text" id="search-field" placeholder="Buscar por marcas ou produto...">
+                                        <input type="text" id="search-field" placeholder="Buscar por marcas ou produto..." value="'.$_GET["sc"].'">
                                         <span id="search-button" onclick="gotoresult();" onkeydown=""><img src="images/lupa.png" width="29"/></span>
                                     </div>
                                 </div>

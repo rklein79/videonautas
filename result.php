@@ -1,7 +1,7 @@
-<?php
-     extract($_GET);
+<?php	
+  //   extract($_GET);
      include('inc/header.php');
-     $header = new header('<script type="text/javascript" src="js/index.js"></script>');
+     $header = new header('<script type="text/javascript" src="js/result.js"></script>');
      echo $header->build();
 ?>
 
@@ -10,8 +10,8 @@
         <span id="videonautas-result"></span>
         <div id="busca_result">
             <?php
-                if(trim($sc) != ""){
-                echo'<script>buscaResult("'.$sc.'");</script>';
+                if(trim($_GET["sc"]) != ""){
+                echo'<script>buscaResult("'.$_GET["sc"].'");</script>';
                 }
             ?>
             <div id="prod_pesq-top"><span id="title-side">Produto pesquisado</span></div>

@@ -1,53 +1,57 @@
 <?php
 
-<<<<<<< HEAD
-namespace gallery;
-
-
-class gallery {
-
-} 
-=======
 
 class gallery {
 
     private $videos = array(
-        0=>array(
+        0=>array(            
+			'video_id'=>'wuPbAjhPQrg',            
+			'video_busca'=>'Telefone Gigaset A390Duo',            
+			'video_nome'=>'Telefone Gigaset A390 Duo - duas linhas titulo',            
+			'video_fabricante'=>'Gigaset'        
+			),        
+		1=>array(            
+			'video_id'=>'2xyrQoWFaPI',            
+			'video_busca'=>'Playstation 4 500 GB',            
+			'video_nome'=>'Sony Playstation 4 500 GB - duas linhas titulo',            
+			'video_fabricante'=>'SONY'        
+			),        
+		2=>array(
             'video_id'=>'c0bE5xHkklE',
             'video_busca'=>'Playstation 4 500 GB',
             'video_nome'=>'Sony Playstation 4 500 GB - duas linhas titulo',
             'video_fabricante'=>'SONY'
         ),
-        1=>array(
+        3=>array(
             'video_id'=>'PEUlCGcqV8s',
             'video_busca'=>'Xbox One',
             'video_nome'=>'Xbox One - duas linhas titulo',
             'video_fabricante'=>'Microsoft'
         ),
-        2=>array(
+        4=>array(
             'video_id'=>'_e3mDZL3b24',
             'video_busca'=>'Nintendo Wii U',
             'video_nome'=>'Xbox One - duas linhas titulo',
             'video_fabricante'=>'Nintendo'
         ),
-        3=>array(
+        5=>array(
             'video_id'=>'j-gUxFmjz84',
             'video_busca'=>'iPhone 5s',
             'video_nome'=>'iPhone 5s - duas linhas titulo',
             'video_fabricante'=>'iPhone'
         ),
-        4=>array(
+        6=>array(
             'video_id'=>'9cJRd37IEPE',
             'video_busca'=>'Samsung Galaxy S5',
             'video_nome'=>'Galaxy S5 Samsung SM-G900M  - duas linhas titulo',
             'video_fabricante'=>'Samsung'
         ),
-        5=>array(
+        7=>array(
             'video_id'=>'jlu0R6RtsU0',
             'video_busca'=>'Sony Xperia Z',
             'video_nome'=>'Sony Xperia Z  - duas linhas titulo',
             'video_fabricante'=>'Sony'
-        ),
+        )/*
         6=>array(
             'video_id'=>'_UB5hpk0iqg',
             'video_busca'=>'GTA 5',
@@ -59,7 +63,7 @@ class gallery {
             'video_busca'=>'LG G Flex LG-D956 Smartphone',
             'video_nome'=>'LG G Flex LG-D956 Smartphone  - duas linhas titulo',
             'video_fabricante'=>'LG'
-        )
+        )*/
     );
 
     public function getVideos($id = ""){
@@ -87,4 +91,3 @@ class gallery {
     }
 
 }
->>>>>>> 5008a16763ab27f07b567f0da957f79bb7b6c331

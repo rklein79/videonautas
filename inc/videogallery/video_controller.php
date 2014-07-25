@@ -1,15 +1,4 @@
 <?php
-<<<<<<< HEAD
-
-namespace video_controller;
-
-
-use video\video;
-
-class video_controller extends video{
-
-} 
-=======
 extract($_POST);
 require('gallery.php');
 $gal = new gallery();
@@ -33,7 +22,7 @@ echo
         "        height: '390',".
         "        width: '640',".
         "        videoId: '".$vd["video_id"]."',".
-        "        playerVars: { 'autoplay': 1, 'controls': 0, 'autoride': 1 },".
+        "        playerVars: { 'autoplay': 1, 'controls': 1, 'autoride': 1 },".
         "        events: {".
         "            'onReady': onPlayerReady,".
         "            'onStateChange': onPlayerStateChange".
@@ -56,4 +45,3 @@ echo
 "</html>";
 
 ?>
->>>>>>> 5008a16763ab27f07b567f0da957f79bb7b6c331
